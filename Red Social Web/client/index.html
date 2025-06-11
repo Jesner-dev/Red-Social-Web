@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="../public/output.css" rel="stylesheet">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/output.css" />
+    <script type="module" src="./js/login.js" defer></script>
+    <!-- <script type="module" src="./js/utility.js" defer></script> -->
+  </head>
+  <body class="bg-blue-600 min-h-screen flex items-center justify-center px-4">
+    <main class="w-full max-w-lg bg-white shadow-lg rounded-xl p-8">
+      <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">
+        Iniciar Sesión
+      </h1>
+        <div>
+          <label for="correo" class="block text-sm font-medium text-gray-700">
+            Correo Electrónico
+          </label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ejemplo@correo.com"
+            required
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
 
-</head>
-<body>
-    
-</body>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700 mt-4">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <div class="flex items-center mt-4">
+          <input
+            id="recordar"
+            type="checkbox"
+            class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300"
+          />
+          <label for="recordar" class="ml-2 text-sm font-medium text-gray-700">
+            Recordarme
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          id="btn-enviar"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200 mt-6"
+        >
+          Verificar
+        </button>
+
+        <div class="mt-6 text-center space-y-2">
+          <a href="#" class="text-sm text-blue-600 hover:underline block">
+            ¿Olvidaste tu contraseña?
+          </a>
+          <a href="./register.html" class="text-sm text-blue-600 hover:underline block">
+            Registrarse
+          </a>
+        </div>
+    </main>
+  </body>
 </html>
